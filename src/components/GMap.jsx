@@ -3,10 +3,10 @@ import {GoogleMap, MarkerF, useLoadScript} from "@react-google-maps/api";
 export const GMap = ({lat, lng, width, height}) => {
 
   const {isLoaded} = useLoadScript({
-    googleMapsApiKey: "AIzaSyAJl5try92VKdhQCDIgWIZvpvEBGsAO9HA"
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_KEY
   })
 
-  if (!isLoaded) return <h1>Cargandoooooooo</h1>
+  if (!isLoaded) return <h1>Loading map...</h1>
 
   return (
     <GoogleMap
