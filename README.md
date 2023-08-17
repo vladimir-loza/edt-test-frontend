@@ -16,3 +16,6 @@
 ## External APIs used
 + Pexels API
 + Google Maps API
+
+## Backend repo
++ [Link](https://github.com/vladimir-loza/edt-test-backend)
